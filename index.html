@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>Tanks! Practice Mod</title>
+
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+        <style>
+            @font-face {
+                font-family: 'A-OTF Shin Go Pro DB';
+                font-style: normal;
+                font-weight: normal;
+                src: url('fonts/AOTFShinGoProDeBold.woff') format('woff');
+            }
+
+            @font-face {
+                font-family: 'A-OTF Shin Go Pro L';
+                font-style: normal;
+                font-weight: normal;
+                src: url('fonts/AOTFShinGoProLight.woff') format('woff');
+            }
+
+            @font-face {
+                font-family: 'A-OTF Shin Go Pro R';
+                font-style: normal;
+                font-weight: normal;
+                src: url('fonts/AOTFShinGoProRegular.woff') format('woff');
+            }
+
+            @font-face {
+                font-family: 'A-OTF Shin Go Pro M';
+                font-style: normal;
+                font-weight: normal;
+                src: url('fonts/AOTFShinGoProMedium.woff') format('woff');
+            }
+
+            body {
+                font-family: 'A-OTF Shin Go Pro R';
+                line-height: 140%;
+            }
+
+            span {
+                font-family: 'A-OTF Shin Go Pro DB';
+            }
+ 
+            button {
+                width: 300px;
+                height: 60px;
+
+                border-color: black;
+                border-radius: 30px;
+                font-size: 40px;
+                font-family: 'A-OTF Shin Go Pro DB';
+                display: inline-block;
+                line-height: 50px;
+                margin: 0 auto;
+                vertical-align: middle;
+                color: white;
+                -webkit-text-stroke: 1px;
+                -webkit-text-stroke-color: black;
+            }
+
+            h1 {
+                font-size: 48px;
+            }
+
+            #container {
+                width: 1000px;
+                margin: 0 auto;
+            }
+
+            /* the following gradient was generated with this dope website -> https://www.gradient-animator.com/ */
+
+            .css-selector {
+                background: linear-gradient(270deg, #ff0000, #ffab00, #f9ff00, #00ff42, #00c5ff, #8200ff, #ff00d4);
+                background-size: 1400% 1400%;
+
+                -webkit-animation: AnimationName 28s ease infinite;
+                -moz-animation: AnimationName 28s ease infinite;
+                animation: AnimationName 28s ease infinite;
+            }
+
+            @-webkit-keyframes AnimationName {
+                0%{background-position:0% 50%}
+                50%{background-position:100% 50%}
+                100%{background-position:0% 50%}
+            }
+            @-moz-keyframes AnimationName {
+                0%{background-position:0% 50%}
+                50%{background-position:100% 50%}
+                100%{background-position:0% 50%}
+            }
+            @keyframes AnimationName {
+                0%{background-position:0% 50%}
+                50%{background-position:100% 50%}
+                100%{background-position:0% 50%}
+            }
+        </style>
+        
+    </head>
+
+    <body>
+        <div align="center" id="container">
+            <h2><i>Introducing...</i></h2>
+            <span><h1>THE TANKS PRACTICE MOD</h1></span>
+
+            <h2>No, really. Download it.</h2>
+            <a href="tanks-practice-mod-1.0.0.zip"><button class="css-selector">Download</button></a>
+            <h2>But how?</h2>
+            
+            <p>1. <span>Install the Homebrew Channel on your Wii/Wii U.</span> <i>(If you already have the Homebrew Channel installed, you can skip this step.)</i> If you are using a Wii, <a href="https://wii.guide/get-started" target="_blank">follow this guide</a>, and if you're using a Wii U, <a href="https://wiiu.hacks.guide/vwii-modding" target="_blank">follow this guide.</a> Once it's installed, the Homebrew Channel will allow you to run custom software from an SD card on your Wii or Wii U.</p>
+            
+            <p>2. <span>Install Riivolution on your Wii/Wii U.</span> <i>(If you already have Riivolution installed, you can skip this step.)</i> Riivolution is a piece of homebrew software that allows you to apply patches to your Wii games. You can get it <a href="https://riivolution.github.io/wiki/Riivolution/" target="_blank">here</a>.</p>
+
+            <p>3. <span>Download the ZIP file linked above.</span></p>
+
+            <p>4. <span>Extract the contents of the downloaded ZIP file.</span> Go into the "tanks-practice-mod" folder, and then copy the "riivolution" and "wiiplay" folders to the root of your SD card. If you are asked if you want to merge folders or replace files, choose "Yes".</p>
+
+            <p>5. <span>Once the files finish copying, put the SD card into your Wii or Wii U, insert your Wii Play disc, start the Homebrew Channel, and then start Riivolution from there.</span> If everything works correctly, after a few moments, it should display a menu with the togglable option "Tanks Practice Mod". Enable it, then click Launch to start up the mod.</p>
+
+            <p>6. <span>Congratulations!</span> If you did everything right you should be in the mod. Note that to combat version differences, this mod patches your entire game to run the US v1.1 version. If you normally play on a different region, this unfortunately will create a new save file, but you can just do an NG run or something idk</p>
+        
+            <h2>But... how?</h2>
+
+            <p>Ok fine here's how the mod actually works. Currently, this is a <span>mission selector</span>. That's all it is. In the future, I may need to think about creating a layout/color selector too, but that'll be much harder to implement. But anyway, the core use process of this mod is that you have to <span>press "Start over" while holding a certain button combination</span> to change the mission counter by a desired value. The button functions are as follows:</p>
+
+            <p>
+                - <span>A:</span> +50 <br>
+                - <span>B:</span> +20 <br>
+                - <span>1:</span> +10 <br>
+                - <span>2:</span> +5 <br>
+                - <span>Up:</span> +1 <br>
+                - <span>Left:</span> +2 <br>
+                - <span>Down:</span> +3 <br>
+                - <span>Right:</span> +4 <br>
+                - <span>Minus:</span> Subtract <br>
+            </p>
+
+            <p>You can hold any combination of these buttons to add the numbers up to anything you want, and that sum will then be added to the current mission number (or subtracted from it if you're also holding the minus button). This should be pretty straightforward I think. Have fun!</p>
+
+            <h2>Thank you kiwi for literally carrying this entire project you are the goat 🙏🙏🙏</h2>
+
+    </body>
+</html>
